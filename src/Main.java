@@ -1,15 +1,17 @@
+import java.util.*;
 
 public class Main {
 
 	public static void main(String[] args) {
 
+		Form<Integer> f = new Form<Integer>();
+		f.setData(10);
+
 		/*
-		 *Main code do stor
-		 *Implementar as classes baseado nesse codigo 
+		 * Main code do stor Implementar as classes baseado nesse codigo
 		 * 
-		 * */
-		
-		
+		 */
+
 //		UsernameForm form = new UsernameForm();
 //		form.get("username").setData("tia");
 //		form.get("email").setData("tia@gmail.com");

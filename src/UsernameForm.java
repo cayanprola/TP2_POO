@@ -1,11 +1,16 @@
+import java.util.*;
 
 public class UsernameForm extends Form {
+	
 
 	// Constructors
 	UsernameForm() {
-	}
+		super();
+		this.put("username", new StringField("Username", new Validator[] { new Length(3) }));
+		this.put("email", new StringField("Email", new Validator[] { new Required() }));
+		this.put("age", new NumberField("Age", new Validator[] { new NumberRange(16, 99) }));
 
-	// Setters & Getters
+	}
 
 	// Getters
 
@@ -15,10 +20,6 @@ public class UsernameForm extends Form {
 	}
 
 	// Methods
-
-	public void put() {
-
-	}
 
 	public void json() {
 
@@ -33,4 +34,5 @@ public class UsernameForm extends Form {
 	public void validate() {
 
 	}
+
 }
