@@ -10,7 +10,7 @@ public class StringField extends Field<String> {
 	}
 
 	StringField(String type, Validator v[]) { // Type is the attribute in the form
-
+		super();
 	}
 
 	// Getters
@@ -20,8 +20,16 @@ public class StringField extends Field<String> {
 	}
 
 	// Setters
-	// Dont need setters for arraylist
+	// Dont need setters for arraylist, use getter + .add instead
 
 	// Methods
+	@Override
+	public void validateField() {
 
+	}
+
+	@Override
+	void setData(String string) {
+		this.sf.add(string);
+	}
 }

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7e69378-03db-4b8c-9e0b-a29a325b93bc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/bin/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Length.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Length.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/NumberField.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/NumberField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/NumberRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/NumberRange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Required.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Required.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/StringField.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/StringField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/UsernameForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/UsernameForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Validator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Length.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NumberField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NumberRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Required.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Required.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UsernameForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsernameForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JbnirSmY7OOZvn8SiT68Oz06XO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/cayan/Documents/Java/TP2_POO/.project",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7e69378-03db-4b8c-9e0b-a29a325b93bc" name="Changes" comment="" />
+      <created>1672355779977</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672355779977</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

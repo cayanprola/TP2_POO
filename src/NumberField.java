@@ -10,7 +10,7 @@ public class NumberField extends Field<Number> {
 	}
 
 	NumberField(String type, Validator v[]) { // Type is the attribute in the form
-
+		super();
 	}
 
 	// Getters
@@ -19,6 +19,14 @@ public class NumberField extends Field<Number> {
 		return this.nf;
 	}
 
-	// Setters
 	// Methods
+	@Override
+	public void validateField() {
+
+	}
+
+	@Override
+	void setData(Number num) {
+		this.nf.add(num);
+	}
 }

@@ -1,13 +1,17 @@
 import java.util.*;
 
-abstract class Field<T> {
+abstract class Field<T> { 
+	//Testar usando interface e implements
 	// T stands for "Type"
-	
+
 	// Constructors
 
 	// Getters
-	abstract ArrayList<T> getField();
 
 	// Methods
+	abstract ArrayList<T> getField();
 
+	abstract void validateField();
+
+	abstract void setData(T t);
 }

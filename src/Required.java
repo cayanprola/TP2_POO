@@ -4,7 +4,7 @@ public class Required extends Validator {
 
 	// Constructors
 	Required() {
-
+		super();
 	}
 	// Getters
 	// Setters
