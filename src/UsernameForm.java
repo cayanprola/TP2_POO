@@ -1,4 +1,9 @@
+import java.io.*;
 import java.util.*;
+
+import javax.xml.transform.*;
+import javax.xml.transform.dom.*;
+import javax.xml.transform.stream.*;
 
 public class UsernameForm extends Form<String, Field<?>> {
 
@@ -20,11 +25,43 @@ public class UsernameForm extends Form<String, Field<?>> {
 
 	// Methods
 
-	public void json() {
-
+	public String json() {
+		String json = "{";
+		
+		for (String key : this.map.keySet()) {
+			if (json != "{") {
+				json += ", ";
+			}
+			
+			json += "'" + key + "': ";
+			
+			if (this.map.get(key).getClass().equals(new NumberField().getClass())) {
+				// Number
+				json += this.map.get(key).getField().get(0);
+			} else {
+				// Text
+				json += "'" + this.map.get(key).getField().get(0) + "'";
+			}
+		}
+		
+		return json + "}";
 	}
 
-	public void content() {
+	public String content() {
+		String form = "<form>\n";
+		for (String key : this.map.keySet()) {
+			form += "	<label for='" + key + "'>" + key + ":</label>\n";
+			
+			// Comparing class of value to know if its a StringField or NumberField.
+			String type = "text";
+			if (this.map.get(key).getClass().equals(new NumberField().getClass())) {
+				type = "number";
+			}
+			form += "	<input name='" + key + "' type='" + type + "' value='" + this.map.get(key).getField().get(0) + "'/><br>\n";
+		}
+		form += "</form>";
+		
+		return form;
 	}
 
 	@SuppressWarnings("unchecked")

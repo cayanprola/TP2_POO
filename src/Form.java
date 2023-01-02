@@ -40,13 +40,6 @@ public class Form<T, E> extends HashMap {
 
 	// Methods
 
-	public void json() {
-
-	}
-
-	public void content() {
-	}
-
 	public void validate() {
 		
 	}

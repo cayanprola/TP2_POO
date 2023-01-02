@@ -7,9 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7e69378-03db-4b8c-9e0b-a29a325b93bc" name="Changes" comment="Fixed Number setData">
+    <list default="true" id="c7e69378-03db-4b8c-9e0b-a29a325b93bc" name="Changes" comment="Fixed validate form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/UsernameForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/UsernameForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UsernameForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsernameForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +75,7 @@
       <workItem from="1672672891251" duration="185000" />
       <workItem from="1672682270731" duration="50000" />
       <workItem from="1672683480700" duration="81000" />
-      <workItem from="1672695318563" duration="497000" />
+      <workItem from="1672695318563" duration="1869000" />
     </task>
     <task id="LOCAL-00001" summary="getData para username e email">
       <created>1672673036353</created>
@@ -86,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672683547442</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed validate form">
+      <created>1672696048786</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672696048786</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +129,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="getData para username e email" />
     <MESSAGE value="Fixed Number setData" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Number setData" />
+    <MESSAGE value="Fixed validate form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed validate form" />
   </component>
 </project>
