@@ -31,5 +31,6 @@ public class StringField extends Field<String> {
 	@Override
 	void setData(String string) {
 		this.sf.add(string);
+		System.out.println(sf);
 	}
 }

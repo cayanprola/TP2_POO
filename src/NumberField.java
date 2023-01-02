@@ -1,8 +1,8 @@
 import java.util.*;
 
-public class NumberField extends Field<Number> {
+public class NumberField extends Field<Integer> {
 	// T stands for "Type"
-	private ArrayList<Number> nf = new ArrayList<Number>();
+	private ArrayList<Integer> nf = new ArrayList<Integer>();
 	// Constructors
 
 	NumberField() {
@@ -15,7 +15,7 @@ public class NumberField extends Field<Number> {
 
 	// Getters
 	@Override
-	public ArrayList<Number> getField() {
+	public ArrayList<Integer> getField() {
 		return this.nf;
 	}
 
@@ -26,7 +26,7 @@ public class NumberField extends Field<Number> {
 	}
 
 	@Override
-	void setData(Number num) {
+	void setData(Integer num) {
 		this.nf.add(num);
 	}
 }

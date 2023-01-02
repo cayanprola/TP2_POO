@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Form<T> extends HashMap<String, Field<T>> {
+public class Form<T, E> extends HashMap {
 
 	/**
 	 * 
@@ -12,8 +12,8 @@ public class Form<T> extends HashMap<String, Field<T>> {
 
 	protected StringField sf = new StringField();
 	protected NumberField nf = new NumberField();
-	protected HashMap<String, Field<String>> map = new HashMap<String, Field<String>>();
-	protected HashMap<String, Field<Number>> mapNum = new HashMap<String, Field<Number>>();
+	protected HashMap<T, E> map = new HashMap<T, E>();
+
 	// Constructors
 	Form() {
 		super();
@@ -21,27 +21,22 @@ public class Form<T> extends HashMap<String, Field<T>> {
 
 	// Getters
 
-	public HashMap<String, Field<String>> getMap() {
-		return map;
-	}
-
-	public void setMap(HashMap<String, Field<String>> map) {
-		this.map = map;
-	}
-	
-	public HashMap<String, Field<Number>> getMapNum() {
-		return mapNum;
-	}
-
-	public void setMapNum(HashMap<String, Field<Number>> map) {
-		this.mapNum = map;
-	}
+//	public HashMap<String, Field<String>> getMap() {
+//		return map;
+//	}
+//
+//	public HashMap<String, Field<Number>> getMapNum() {
+//		return map;
+//	}
 
 	// Setters
-	public void setData() { // Sets the data of the selected attribute
-		
-		
-	}
+//	public void setMap(HashMap<String, Field<String>> map) {
+//		this.map = map;
+//	}
+//
+//	public void setMapNum(HashMap<String, Field<Number>> map) {
+//		this.mapNum = map;
+//	}
 
 	// Methods
 
@@ -52,14 +47,12 @@ public class Form<T> extends HashMap<String, Field<T>> {
 	public void content() {
 	}
 
-	public void get() { // Defines a string for the type of attribute in the form
-	}
-
 	public void validate() {
 
 	}
+
 	public void errors() {
-		
+
 	}
 
 }

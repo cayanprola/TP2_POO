@@ -5,7 +5,9 @@ public class Validator {
 	Scanner sc = new Scanner(System.in);
 
 	// Constructors
+	Validator() {
 
+	}
 	// Getters
 
 	// Setters

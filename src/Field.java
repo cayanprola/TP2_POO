@@ -1,9 +1,8 @@
 import java.util.*;
 
-abstract class Field<T> { 
-	//Testar usando interface e implements
+abstract class Field<T> {
+	// Testar usando interface e implements
 	// T stands for "Type"
-
 	// Constructors
 
 	// Getters
@@ -14,5 +13,5 @@ abstract class Field<T> {
 	abstract void validateField();
 
 	abstract void setData(T t);
-	abstract void setData(int t);
+
 }
