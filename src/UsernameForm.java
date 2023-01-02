@@ -34,8 +34,9 @@ public class UsernameForm extends Form<String, Field<?>> {
 	}
 
 	public void validate() {
-		System.out.println(this.map.keySet());
-		System.out.println(this.map.values().size());
+		for (String key : this.map.keySet()) {
+			System.out.println(key + ": " + this.map.get(key).getField());
+		}
 		
 //		new Length(3).validateLength(3);
 	}
