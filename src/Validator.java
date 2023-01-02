@@ -3,9 +3,11 @@ import java.util.*;
 public class Validator {
 	// Validates the Length, NumberRange and Required class
 	Scanner sc = new Scanner(System.in);
-
+	protected StringField sf = new StringField();
+	protected NumberField nf = new NumberField();
 	// Constructors
 	Validator() {
+		
 
 	}
 	// Getters
@@ -14,7 +16,8 @@ public class Validator {
 
 	// Methods
 	public boolean validateNR(int num, int min, int max) {
-
+		
+		
 		if (num < min) {
 			System.out.println("Error: lower than min.");
 			return false;
@@ -41,8 +44,9 @@ public class Validator {
 
 	}
 
-	public boolean validateLength(String str, int length) {
-		if (str.length() == length) {
+	public boolean validateLength(int length) {
+		
+		if (sf.getField().toString().length() == length) {
 			System.out.println("Range is good.");
 			return true;
 		} else {

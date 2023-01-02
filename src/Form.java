@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Form<T, E> extends HashMap {
-
+	
 	/**
 	 * 
 	 */
@@ -9,7 +9,7 @@ public class Form<T, E> extends HashMap {
 	/**
 	 * 
 	 */
-
+	
 	protected StringField sf = new StringField();
 	protected NumberField nf = new NumberField();
 	protected HashMap<T, E> map = new HashMap<T, E>();
@@ -48,7 +48,7 @@ public class Form<T, E> extends HashMap {
 	}
 
 	public void validate() {
-
+		
 	}
 
 	public void errors() {

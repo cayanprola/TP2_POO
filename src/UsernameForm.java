@@ -13,6 +13,7 @@ public class UsernameForm extends Form<String, Field<?>> {
 		this.map.put("username", new StringField("Username", new Validator[] { new Length(3) }));
 		this.map.put("email", new StringField("Email", new Validator[] { new Required() }));
 		this.map.put("age", new NumberField("Age", new Validator[] { new NumberRange(16, 99) }));
+
 	}
 
 	// Getters
@@ -33,6 +34,9 @@ public class UsernameForm extends Form<String, Field<?>> {
 	}
 
 	public void validate() {
-
+		System.out.println(this.map.keySet());
+		System.out.println(this.map.values().size());
+		
+//		new Length(3).validateLength(3);
 	}
 }

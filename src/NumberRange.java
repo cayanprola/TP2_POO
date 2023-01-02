@@ -10,7 +10,7 @@ public class NumberRange extends Validator {
 		super();
 		this.min = newMin;
 		this.max = newMax;
-//		int n = 0;
+		int n = 0;
 //		System.out.println("Input age: ");
 //		n = sc.nextInt();
 //		validateNR(n, min, max);

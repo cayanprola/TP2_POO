@@ -11,6 +11,7 @@ public class StringField extends Field<String> {
 
 	StringField(String type, Validator v[]) { // Type is the attribute in the form
 		super();
+		
 	}
 
 	// Getters
@@ -32,5 +33,6 @@ public class StringField extends Field<String> {
 	void setData(String string) {
 		this.sf.add(string);
 		System.out.println(sf);
+		
 	}
 }
