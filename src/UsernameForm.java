@@ -26,12 +26,10 @@ public class UsernameForm extends Form<String, Field<?>> {
 	public void content() {
 	}
 
-	public Field<String> get(String key) {
+	@SuppressWarnings("unchecked")
+	public <T> Field<T> get(String key) {
 		// TODO: Add exception if not on keys?
-		if (this.map.containsKey(key)) {
-			return (Field<String>) this.map.get(key);
-		}
-		return (Field<String>) this.map.get(key);
+		return (Field<T>) this.map.get(key);
 	}
 
 	public void validate() {
