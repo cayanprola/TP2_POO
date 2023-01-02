@@ -14,4 +14,5 @@ abstract class Field<T> {
 	abstract void validateField();
 
 	abstract void setData(T t);
+	abstract void setData(int t);
 }

@@ -13,18 +13,10 @@ public class UsernameForm extends Form<String> {
 		this.map.put("username", new StringField("Username", new Validator[] { new Length(3) }));
 		this.map.put("email", new StringField("Email", new Validator[] { new Required() }));
 		this.mapNum.put("age", new NumberField("Age", new Validator[] { new NumberRange(16, 99) }));
-
 	}
 
 	// Getters
 
-	// Setters
-	@Override
-	public void setData() { // Sets the data of the selected attribute
-
-		getMapNum().put("age", nf);
-		setMapNum(getMapNum());
-	}
 
 	// Methods
 
@@ -35,7 +27,12 @@ public class UsernameForm extends Form<String> {
 	public void content() {
 	}
 
-	public void get() {
+	public Field<String> get(String key) {
+		// TODO: Add exception if not on keys?
+		if (this.map.containsKey(key)) {
+			return this.map.get(key);
+		}
+		return this.map.get(key);
 	}
 
 	public void validate() {
