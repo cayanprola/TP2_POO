@@ -28,9 +28,15 @@ public class StringField extends Field<String> {
 	// Methods
 	@Override
 	public void validateField() {
+		ArrayList<String> errors = new ArrayList<>();
 		for (Validator validator : this.validators) {
-			System.out.println(sf + "" + validator.isValid(this.sf.get(0)));
+			try {
+				validator.isValid(this.sf.get(0));
+			} catch (ValidationException e) {
+				errors.add(e.getMessage());
+			}
 		}
+		System.out.println(errors);
 	}
 
 	@Override

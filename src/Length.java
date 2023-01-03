@@ -19,10 +19,10 @@ public class Length extends Validator<String>{
 
 	// Methods
 	@Override
-	public boolean isValid(String value) {
+	public void isValid(String value) throws ValidationException {
 		Integer len = value.length();
 		if(len < min || len > max) {
-			return false;
-		} else return true;
+			throw new ValidationException("Error: Invalid length");
+		}
 	}
 }

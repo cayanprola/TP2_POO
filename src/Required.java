@@ -11,11 +11,10 @@ public class Required extends Validator<String> {
 	// Methods
 
 	@Override
-	public boolean isValid(String str) {
+	public void isValid(String str) throws ValidationException {
 		if (str.length() <= 0) {
-			return false;
-		} else
-			return true;
+			throw new ValidationException("Error: Value is required");
+		}
 	}
 	
 

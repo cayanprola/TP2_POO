@@ -13,8 +13,8 @@ public class Main {
 
 		UsernameForm form = new UsernameForm();
 
-		form.get("username").setData("tia");
-		form.get("email").setData("tia@gmail.com");
+		form.get("username").setData("");
+		form.get("email").setData("");
 		form.get("age").setData(50);
 		form.validate();
 		

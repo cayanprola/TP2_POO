@@ -24,9 +24,15 @@ public class NumberField extends Field<Number> {
 	// Methods
 	@Override
 	public void validateField() {
+		ArrayList<String> errors = new ArrayList<>();
 		for (Validator validator : this.validators) {
-			System.out.println(nf + "" + validator.isValid(this.nf.get(0)));
+			try {
+				validator.isValid(this.nf.get(0));
+			} catch (ValidationException e) {
+				errors.add(e.getMessage());
+			}
 		}
+		System.out.println(errors);
 	}
 
 	@Override

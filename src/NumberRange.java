@@ -16,10 +16,9 @@ public class NumberRange extends Validator<Integer> {
 	// Constructors
 	// Methods
 	@Override
-	public boolean isValid(Integer value) {
+	public void isValid(Integer value) throws ValidationException {
 		if (value < min || value > max) {
-			return false;
-		} else
-			return true;
+			throw new ValidationException("Error: Invalid number");
+		}
 	}
 }
