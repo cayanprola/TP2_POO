@@ -10,15 +10,31 @@ public class NumberRange extends Validator {
 		super();
 		this.min = newMin;
 		this.max = newMax;
-		int n = 0;
-//		System.out.println("Input age: ");
-//		n = sc.nextInt();
-//		validateNR(n, min, max);
 
 	}
-	// Constructors
-	// Getters
-	// Setters
-	// Methods
 
+	// Constructors
+	// Methods
+	@Override
+	public boolean isValid(Object value) {
+		if (value == null) {
+			return true;
+		}
+		int number = (int) value;
+		return number >= min && number <= max;
+	}
+
+	public boolean validateNR(int num) {
+		String str;
+		if (num < this.min) {
+			str = "Error: lower than min.";
+			return false;
+		} else if (num > this.max) {
+			str = "Error: bigger than max.";
+			return false;
+		} else {
+			return true;
+		}
+
+	}
 }

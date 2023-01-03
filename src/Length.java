@@ -2,23 +2,27 @@
 public class Length extends Validator {
 	// Used to define the length of the username
 
-	private int length = 0;
+	private int min = 0;
+	private int max = 0;
 
 	// Constructors
-	Length(int newLength) {
+	Length(int min, int max) {
 		super();
-		this.length = newLength;
-		
+		this.min = min;
+		this.max = max;
+
 	}
 
-	// Getters
-	public int getLength() {
-		return this.length;
+	Length(int min) {
+		this(min, Integer.MAX_VALUE);
 	}
 
-	// Setters
-	public void setLength(int newLength) {
-		this.length = newLength;
-	}
 	// Methods
+	public boolean isValid(Object value) {
+		if (value == null) {
+			return true;
+		}
+		int length = value.toString().length();
+		return length >= min && length <= max;
+	}
 }

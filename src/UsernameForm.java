@@ -27,14 +27,14 @@ public class UsernameForm extends Form<String, Field<?>> {
 
 	public String json() {
 		String json = "{";
-		
+
 		for (String key : this.map.keySet()) {
 			if (json != "{") {
 				json += ", ";
 			}
-			
+
 			json += "'" + key + "': ";
-			
+
 			if (this.map.get(key).getClass().equals(new NumberField().getClass())) {
 				// Number
 				json += this.map.get(key).getField().get(0);
@@ -43,7 +43,7 @@ public class UsernameForm extends Form<String, Field<?>> {
 				json += "'" + this.map.get(key).getField().get(0) + "'";
 			}
 		}
-		
+
 		return json + "}";
 	}
 
@@ -51,16 +51,17 @@ public class UsernameForm extends Form<String, Field<?>> {
 		String form = "<form>\n";
 		for (String key : this.map.keySet()) {
 			form += "	<label for='" + key + "'>" + key + ":</label>\n";
-			
+
 			// Comparing class of value to know if its a StringField or NumberField.
 			String type = "text";
 			if (this.map.get(key).getClass().equals(new NumberField().getClass())) {
 				type = "number";
 			}
-			form += "	<input name='" + key + "' type='" + type + "' value='" + this.map.get(key).getField().get(0) + "'/><br>\n";
+			form += "	<input name='" + key + "' type='" + type + "' value='" + this.map.get(key).getField().get(0)
+					+ "'/><br>\n";
 		}
 		form += "</form>";
-		
+
 		return form;
 	}
 
@@ -71,10 +72,22 @@ public class UsernameForm extends Form<String, Field<?>> {
 	}
 
 	public void validate() {
+		System.out.println(this.map.get("email").getField().toString());
+		if (req.validate(this.map.get("email").getField().toString()) == true) {
+			System.out.println("Valid email.");
+		} else {
+			System.out.println("Invalid email.");
+		}
+	}
+
+	public void addErrors(String str) {
+		err.add(str);
+	}
+
+	public void printmap() {
 		for (String key : this.map.keySet()) {
 			System.out.println(key + ": " + this.map.get(key).getField());
 		}
-		
-//		new Length(3).validateLength(3);
 	}
+
 }

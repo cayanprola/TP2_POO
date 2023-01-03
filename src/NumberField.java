@@ -28,6 +28,5 @@ public class NumberField extends Field<Number> {
 	@Override
 	void setData(Number num) {
 		this.nf.add(num);
-		System.out.println(nf);
 	}
 }

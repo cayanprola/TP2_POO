@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Form<T, E> extends HashMap {
-	
+
 	/**
 	 * 
 	 */
@@ -9,10 +9,14 @@ public class Form<T, E> extends HashMap {
 	/**
 	 * 
 	 */
-	
+
 	protected StringField sf = new StringField();
 	protected NumberField nf = new NumberField();
 	protected HashMap<T, E> map = new HashMap<T, E>();
+	protected Required req = new Required();
+	protected Length len = new Length(3);
+	protected NumberRange nr = new NumberRange(16, 99);
+	ArrayList<String> err = new ArrayList<String>();
 
 	// Constructors
 	Form() {
@@ -21,27 +25,10 @@ public class Form<T, E> extends HashMap {
 
 	// Getters
 
-//	public HashMap<String, Field<String>> getMap() {
-//		return map;
-//	}
-//
-//	public HashMap<String, Field<Number>> getMapNum() {
-//		return map;
-//	}
-
-	// Setters
-//	public void setMap(HashMap<String, Field<String>> map) {
-//		this.map = map;
-//	}
-//
-//	public void setMapNum(HashMap<String, Field<Number>> map) {
-//		this.mapNum = map;
-//	}
-
 	// Methods
 
 	public void validate() {
-		
+
 	}
 
 	public void errors() {
