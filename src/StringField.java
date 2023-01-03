@@ -2,7 +2,9 @@ import java.util.*;
 
 public class StringField extends Field<String> {
 	// T stands for "Type"
+
 	private ArrayList<String> sf = new ArrayList<String>();
+	private Validator[] validators;
 
 	// Constructors
 	StringField() {
@@ -11,7 +13,7 @@ public class StringField extends Field<String> {
 
 	StringField(String type, Validator v[]) { // Type is the attribute in the form
 		super();
-		
+		this.validators = v;
 	}
 
 	// Getters
@@ -26,7 +28,9 @@ public class StringField extends Field<String> {
 	// Methods
 	@Override
 	public void validateField() {
-
+		for (Validator validator : this.validators) {
+			System.out.println(sf + "" + validator.isValid(this.sf.get(0)));
+		}
 	}
 
 	@Override

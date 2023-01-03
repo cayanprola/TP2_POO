@@ -14,8 +14,8 @@ public class Main {
 		UsernameForm form = new UsernameForm();
 
 		form.get("username").setData("tia");
-		form.get("email").setData("tiagmail.com");
-		form.get("age").setData(116);
+		form.get("email").setData("tia@gmail.com");
+		form.get("age").setData(50);
 		form.validate();
 		
 		for (String err : form.errors)

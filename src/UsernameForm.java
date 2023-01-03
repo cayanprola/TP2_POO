@@ -73,14 +73,14 @@ public class UsernameForm extends Form<String, Field<?>> {
 
 	public void validate() {
 		for (String key : this.map.keySet()) {
-
+			this.map.get(key).validateField();
 		}
-		if (req.isValid((String) this.map.get("email").getField().get(0)) == false) {
-			this.addErrors("Error: Invalid email.");
-		} 
-		if (nr.isValid((int) this.map.get("age").getField().get(0)) == false) {
-			this.addErrors("Errors: Invalid age");
-		}
+		// if (req.isValid((String) this.map.get("email").getField().get(0)) == false) {
+		// 	this.addErrors("Error: Invalid email.");
+		// }
+		// if (nr.isValid((int) this.map.get("age").getField().get(0)) == false) {
+		// 	this.addErrors("Errors: Invalid age");
+		// }
 	}
 
 	public void addErrors(String str) {

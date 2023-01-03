@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="ANALYZE_INJECTED_CODE" value="false" />
-  </component>
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7e69378-03db-4b8c-9e0b-a29a325b93bc" name="Changes" comment="Fixed validate form">
+    <list default="true" id="5e15c2e7-7150-4bc6-ab19-d4c88db12909" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_POO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Field.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/FormTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FormTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Length.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Length.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/NumberField.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/NumberField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/NumberRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/NumberRange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Required.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Required.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/StringField.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/StringField.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/UsernameForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/UsernameForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/UsernameFormTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/UsernameFormTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Validator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Length.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NumberField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UsernameForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsernameForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,38 +37,32 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2JbnirSmY7OOZvn8SiT68Oz06XO" />
+  <component name="ProjectId" id="2JpdeelDBUq5du6plvAdeWW34ZI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "C:/Users/cayan/Documents/Java/TP2_POO/.project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
-      </extension>
+      <module name="TP2_POO" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -67,53 +71,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c7e69378-03db-4b8c-9e0b-a29a325b93bc" name="Changes" comment="" />
-      <created>1672355779977</created>
+      <changelist id="5e15c2e7-7150-4bc6-ab19-d4c88db12909" name="Changes" comment="" />
+      <created>1672779056996</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1672355779977</updated>
-      <workItem from="1672672891251" duration="185000" />
-      <workItem from="1672682270731" duration="50000" />
-      <workItem from="1672683480700" duration="81000" />
-      <workItem from="1672695318563" duration="1869000" />
+      <updated>1672779056996</updated>
+      <workItem from="1672779058371" duration="982000" />
     </task>
-    <task id="LOCAL-00001" summary="getData para username e email">
-      <created>1672673036353</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1672673036353</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Fixed Number setData">
-      <created>1672683547442</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1672683547442</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Fixed validate form">
-      <created>1672696048786</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1672696048786</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ID_ORDER">
-      <list>
-        <option value="Default.Root" />
-        <option value="Default.Author" />
-        <option value="Default.Date" />
-        <option value="Default.Subject" />
-        <option value="Space.CommitStatus" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -125,11 +93,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="getData para username e email" />
-    <MESSAGE value="Fixed Number setData" />
-    <MESSAGE value="Fixed validate form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed validate form" />
   </component>
 </project>

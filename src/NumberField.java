@@ -3,6 +3,7 @@ import java.util.*;
 public class NumberField extends Field<Number> {
 	// T stands for "Type"
 	private ArrayList<Number> nf = new ArrayList<Number>();
+	private Validator[] validators;
 	// Constructors
 
 	NumberField() {
@@ -11,6 +12,7 @@ public class NumberField extends Field<Number> {
 
 	NumberField(String type, Validator v[]) { // Type is the attribute in the form
 		super();
+		this.validators = v;
 	}
 
 	// Getters
@@ -22,7 +24,9 @@ public class NumberField extends Field<Number> {
 	// Methods
 	@Override
 	public void validateField() {
-
+		for (Validator validator : this.validators) {
+			System.out.println(nf + "" + validator.isValid(this.nf.get(0)));
+		}
 	}
 
 	@Override
