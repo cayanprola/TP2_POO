@@ -11,7 +11,7 @@ abstract class Field<T> {
 	
 	abstract ArrayList<T> getField();
 
-	abstract void validateField();
+	abstract ArrayList<String> validateField();
  
 	abstract void setData(T t);
 

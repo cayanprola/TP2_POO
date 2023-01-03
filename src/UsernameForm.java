@@ -73,7 +73,10 @@ public class UsernameForm extends Form<String, Field<?>> {
 
 	public void validate() {
 		for (String key : this.map.keySet()) {
-			this.map.get(key).validateField();
+			ArrayList<String> errors = this.map.get(key).validateField();
+			for (String error : errors) {
+				this.errors.add(error + " on " + key);
+			}
 		}
 //		System.out.println(ce.isValid((String) this.map.get("email").getField().get(0)));
 //		System.out.println(req.isValid((String) this.map.get("email").getField().get(0)));

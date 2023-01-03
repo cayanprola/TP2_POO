@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e15c2e7-7150-4bc6-ab19-d4c88db12909" name="Changes" comment="Multiple validators">
-      <change afterPath="$PROJECT_DIR$/src/ValidationException.java" afterDir="false" />
+    <list default="true" id="5e15c2e7-7150-4bc6-ab19-d4c88db12909" name="Changes" comment="Catch errors of validators">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Form.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Length.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Length.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Field.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/NumberField.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/NumberField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/NumberRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/NumberRange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Required.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Required.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/StringField.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/StringField.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/UsernameForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/UsernameForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Validator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CheckEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CheckEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Length.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NumberField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NumberRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberRange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Required.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Required.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StringField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UsernameForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsernameForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672779056996</updated>
-      <workItem from="1672779058371" duration="3280000" />
+      <workItem from="1672779058371" duration="3570000" />
     </task>
     <task id="LOCAL-00001" summary="Multiple validators">
       <created>1672780077151</created>
@@ -89,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672780077151</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Catch errors of validators">
+      <created>1672782367843</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672782367843</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Multiple validators" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multiple validators" />
+    <MESSAGE value="Catch errors of validators" />
+    <option name="LAST_COMMIT_MESSAGE" value="Catch errors of validators" />
   </component>
 </project>

@@ -27,7 +27,7 @@ public class StringField extends Field<String> {
 
 	// Methods
 	@Override
-	public void validateField() {
+	public ArrayList<String> validateField() {
 		ArrayList<String> errors = new ArrayList<>();
 		for (Validator validator : this.validators) {
 			try {
@@ -36,7 +36,7 @@ public class StringField extends Field<String> {
 				errors.add(e.getMessage());
 			}
 		}
-		System.out.println(errors);
+		return errors;
 	}
 
 	@Override

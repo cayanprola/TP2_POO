@@ -23,7 +23,7 @@ public class NumberField extends Field<Number> {
 
 	// Methods
 	@Override
-	public void validateField() {
+	public ArrayList<String> validateField() {
 		ArrayList<String> errors = new ArrayList<>();
 		for (Validator validator : this.validators) {
 			try {
@@ -32,7 +32,7 @@ public class NumberField extends Field<Number> {
 				errors.add(e.getMessage());
 			}
 		}
-		System.out.println(errors);
+		return errors;
 	}
 
 	@Override
