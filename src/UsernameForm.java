@@ -15,8 +15,8 @@ public class UsernameForm extends Form<String, Field<?>> {
 	// Constructors
 	UsernameForm() {
 		super();
-		this.map.put("username", new StringField("Username", new Validator[] { new Length(3) }));
-		this.map.put("email", new StringField("Email", new Validator[] { new Required() }));
+		this.map.put("username", new StringField("Username", new Validator[] { new Length(3), new Required() }));
+		this.map.put("email", new StringField("Email", new Validator[] { new Required(), new CheckEmail() }));
 		this.map.put("age", new NumberField("Age", new Validator[] { new NumberRange(16, 99) }));
 
 	}
@@ -75,19 +75,19 @@ public class UsernameForm extends Form<String, Field<?>> {
 		for (String key : this.map.keySet()) {
 			this.map.get(key).validateField();
 		}
+//		System.out.println(ce.isValid((String) this.map.get("email").getField().get(0)));
+//		System.out.println(req.isValid((String) this.map.get("email").getField().get(0)));
 		// if (req.isValid((String) this.map.get("email").getField().get(0)) == false) {
-		// 	this.addErrors("Error: Invalid email.");
+		// this.addErrors("Error: Invalid email.");
 		// }
 		// if (nr.isValid((int) this.map.get("age").getField().get(0)) == false) {
-		// 	this.addErrors("Errors: Invalid age");
+		// this.addErrors("Errors: Invalid age");
 		// }
 	}
 
 	public void addErrors(String str) {
 		errors.add(str);
 	}
-	
-	
 
 	public void printmap() {
 		for (String key : this.map.keySet()) {
