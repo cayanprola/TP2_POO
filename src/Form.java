@@ -16,7 +16,7 @@ public class Form<T, E> extends HashMap {
 	protected Required req = new Required();
 	protected Length len = new Length(3);
 	protected NumberRange nr = new NumberRange(16, 99);
-	ArrayList<String> err = new ArrayList<String>();
+	ArrayList<String> errors = new ArrayList<String>();
 
 	// Constructors
 	Form() {
@@ -31,8 +31,5 @@ public class Form<T, E> extends HashMap {
 
 	}
 
-	public void errors() {
-
-	}
 
 }

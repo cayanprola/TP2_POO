@@ -14,12 +14,12 @@ public class Main {
 		UsernameForm form = new UsernameForm();
 
 		form.get("username").setData("tia");
-		form.get("email").setData("tia@gmail.com");
-		form.get("age").setData(16);
+		form.get("email").setData("tiagmail.com");
+		form.get("age").setData(116);
 		form.validate();
 		
-//		for (String err : form.errors)
-//			System.out.println(err);
+		for (String err : form.errors)
+			System.out.println(err);
 		System.out.println(form.content());
 		System.out.println(form.json());
 	}
