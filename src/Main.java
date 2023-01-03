@@ -15,7 +15,7 @@ public class Main {
 
 		form.get("username").setData("tia");
 		form.get("email").setData("tia@gmail.com");
-		form.get("age").setData(12);
+		form.get("age").setData(16);
 		form.validate();
 		
 //		for (String err : form.errors)

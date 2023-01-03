@@ -1,5 +1,5 @@
 
-public class Length extends Validator {
+public class Length extends Validator<Integer>{
 	// Used to define the length of the username
 
 	private int min = 0;
@@ -18,11 +18,9 @@ public class Length extends Validator {
 	}
 
 	// Methods
-	public boolean isValid(Object value) {
-		if (value == null) {
-			return true;
-		}
-		int length = value.toString().length();
-		return length >= min && length <= max;
+	public boolean isValid(Integer value) {
+		if(value < min || value > max) {
+			return false;
+		}else return true;
 	}
 }

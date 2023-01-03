@@ -1,5 +1,5 @@
 
-public class NumberRange extends Validator {
+public class NumberRange extends Validator<Integer> {
 	// Defines the number range in which the age will be accepted, if the value is
 	// lower than min or bigger than max returns an error
 
@@ -16,25 +16,10 @@ public class NumberRange extends Validator {
 	// Constructors
 	// Methods
 	@Override
-	public boolean isValid(Object value) {
-		if (value == null) {
-			return true;
-		}
-		int number = (int) value;
-		return number >= min && number <= max;
-	}
-
-	public boolean validateNR(int num) {
-		String str;
-		if (num < this.min) {
-			str = "Error: lower than min.";
+	public boolean isValid(Integer value) {
+		if (value < min || value > max) {
 			return false;
-		} else if (num > this.max) {
-			str = "Error: bigger than max.";
-			return false;
-		} else {
+		} else
 			return true;
-		}
-
 	}
 }

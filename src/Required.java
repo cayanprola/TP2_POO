@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Required extends Validator {
+public class Required extends Validator<String> {
 	// Used to define values that must not be null, if null = error
 
 	// Constructors
@@ -12,12 +12,9 @@ public class Required extends Validator {
 	}
 
 	// Methods
-	@Override
-	public boolean isValid(Object value) {
-		return value != null && !value.toString().isEmpty();
-	}
 
-	public boolean validate(String str) {
+	@Override
+	public boolean isValid(String str) {
 		String regex = "^[\\w!#$%&amp;'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&amp;'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(str);
@@ -27,4 +24,5 @@ public class Required extends Validator {
 			return false;
 		}
 	}
+
 }
