@@ -2,7 +2,7 @@ import java.util.*;
 
 public class StringField extends Field<String> {
 	// T stands for "Type"
-	
+
 	private ArrayList<String> sf = new ArrayList<String>();
 	private Validator[] validators;
 
@@ -42,8 +42,8 @@ public class StringField extends Field<String> {
 	@Override
 	void setData() {
 		String str = sc.next();
-		
+
 		this.sf.add(str);
-		
+
 	}
 }

@@ -5,8 +5,7 @@ public class CheckPassword extends Validator<String> {
 
 	@Override
 	public void isValid(String str) throws ValidationException {
-		String regex =
-	            "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$";
+		String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(str);
 		if (matcher.matches() == false) {

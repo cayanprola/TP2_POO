@@ -9,11 +9,11 @@ abstract class Field<T> {
 	// Getters
 
 	// Methods
-	
+
 	abstract ArrayList<T> getField();
 
 	abstract ArrayList<String> validateField();
- 
+
 	abstract void setData();
 
 }

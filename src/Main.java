@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Main {
 	static Scanner sc = new Scanner(System.in);
-	static AccountForm aform = new AccountForm();
-	static UsernameForm uform = new UsernameForm();
+	static Form<String, Field<?>> aform = new AccountForm();
+	static Form<String, Field<?>> uform = new UsernameForm();
 
 	public static void main(String[] args) {
 		formSelect();
@@ -54,7 +54,8 @@ public class Main {
 		System.out.println("Insira um email: ");
 		aform.get("email").setData();
 		System.out.println("Insira uma senha de no minimo 8 caracteres e no maximo 20.");
-		System.out.println("Deve possuir pelo menos um número, uma letra minúscula, uma letra maiúscula e um caracter especial.");
+		System.out.println(
+				"Deve possuir pelo menos um número, uma letra minúscula, uma letra maiúscula e um caracter especial.");
 		aform.get("password").setData();
 		aform.validate();
 
