@@ -1,6 +1,7 @@
 import java.util.*;
 
 abstract class Field<T> {
+	protected Scanner sc = new Scanner(System.in);
 	// Testar usando interface e implements
 	// T stands for "Type"
 	// Constructors
@@ -13,6 +14,6 @@ abstract class Field<T> {
 
 	abstract ArrayList<String> validateField();
  
-	abstract void setData(T t);
+	abstract void setData();
 
 }

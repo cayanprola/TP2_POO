@@ -9,17 +9,18 @@ public class Form<T, E> extends HashMap {
 	/**
 	 * 
 	 */
-
 	protected StringField sf = new StringField();
 	protected NumberField nf = new NumberField();
-	protected HashMap<T, E> map = new HashMap<T, E>();
+	protected HashMap<String, Field<?>> map = new HashMap<String, Field<?>>();
 	protected Required req = new Required();
-	protected Length len = new Length(3);
+	protected Length len = new Length(3, 10);
 	protected NumberRange nr = new NumberRange(16, 99);
 	protected CheckEmail ce = new CheckEmail();
 	protected ArrayList<String> errors = new ArrayList<String>();
-
+	
+	
 	// Constructors
+	
 	Form() {
 		super();
 	}
@@ -28,9 +29,7 @@ public class Form<T, E> extends HashMap {
 
 	// Methods
 
-	public void validate() {
-
-	}
+	
 
 
 }

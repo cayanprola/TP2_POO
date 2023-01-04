@@ -6,15 +6,16 @@ public class Length extends Validator<String>{
 	private int max = 0;
 
 	// Constructors
+	Length(int min) {
+		super();
+		this.min = min;
+		this.max = Integer.MAX_VALUE;
+	}
 	Length(int min, int max) {
 		super();
 		this.min = min;
 		this.max = max;
 
-	}
-
-	Length(int min) {
-		this(min, Integer.MAX_VALUE);
 	}
 
 	// Methods

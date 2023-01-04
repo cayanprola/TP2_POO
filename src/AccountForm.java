@@ -5,19 +5,18 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.*;
 import javax.xml.transform.stream.*;
 
-public class UsernameForm extends Form<String, Field<?>> {
+public class AccountForm extends Form<String, Field<?>> {
 
 	/**
 	 * 
 	 */
 
-
 	// Constructors
-	UsernameForm() {
+	AccountForm() {
 		super();
 		this.map.put("username", new StringField("Username", new Validator[] { new Required(), new Length(3, 10) }));
 		this.map.put("email", new StringField("Email", new Validator[] { new Required(), new CheckEmail() }));
-		this.map.put("age", new NumberField("Age", new Validator[] { new NumberRange(16, 99) }));
+		this.map.put("password", new StringField("Password", new Validator[] { new Required(), new CheckPassword() }));
 
 	}
 
@@ -85,7 +84,7 @@ public class UsernameForm extends Form<String, Field<?>> {
 	}
 
 	public void tipoField() {
-		
+
 	}
 
 }
