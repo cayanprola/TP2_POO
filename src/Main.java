@@ -4,10 +4,10 @@ public class Main {
 	static Scanner sc = new Scanner(System.in);
 	static Form<String, Field<?>> aform = new AccountForm();
 	static Form<String, Field<?>> uform = new UsernameForm();
+	static Form<String, Field<?>> fform = new FullForm();
 
 	public static void main(String[] args) {
 		formSelect();
-
 	}
 
 	public void menu() {
@@ -17,7 +17,7 @@ public class Main {
 	public static void formSelect() {
 		int op;
 		System.out.println("Digite qual formulário deseja: ");
-		System.out.println("1-UsernameForm 2-AccountForm.");
+		System.out.println("1-UsernameForm 2-AccountForm 3-FullForm.");
 		op = sc.nextInt();
 		switch (op) {
 		case 1:
@@ -25,6 +25,9 @@ public class Main {
 			break;
 		case 2:
 			fillAcc();
+			break;
+		case 3:
+			fillFull();
 			break;
 		default:
 			formSelect();
@@ -62,4 +65,34 @@ public class Main {
 		System.out.println(aform.content());
 		System.out.println(aform.json());
 	}
+
+	public static void fillFull() {
+		System.out.println("Insira seu primeiro nome: ");
+		fform.get("firstname").setData();
+		System.out.println("Insira seu ultimo nome: ");
+		fform.get("lastname").setData();
+		System.out.println("Insira um username de até 10 caracteres: ");
+		fform.get("username").setData();
+		System.out.println("Insira a idade: ");
+		fform.get("age").setData();
+		System.out.println("Insira um email: ");
+		fform.get("email").setData();
+		System.out.println("Confirme o email: ");
+		fform.get("confirmemail").setData();
+		System.out.println("Insira uma senha de no minimo 8 caracteres e no maximo 20.");
+		System.out.println(
+				"Deve possuir pelo menos um número, uma letra minúscula, uma letra maiúscula e um caracter especial.");
+		fform.get("password").setData();
+		System.out.println("Confirme a sua senha: ");
+		fform.get("confirmpassword").setData();
+		fform.validate();
+
+		for (String err : fform.errors)
+			System.out.println(err);
+		System.out.println(fform.content());
+		System.out.println(fform.json());
+	}
 }
+
+//cayanprola@gmail.com
+//2Dfasjba23@
