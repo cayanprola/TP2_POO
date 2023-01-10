@@ -7,10 +7,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		formSelect();
-		/*
-		 * Main code do stor Implementar as classes baseado nesse codigo
-		 * 
-		 */
 
 	}
 
@@ -19,21 +15,23 @@ public class Main {
 	}
 
 	public static void formSelect() {
-		String op;
+		int op;
 		System.out.println("Digite qual formulário deseja: ");
-		System.out.println("UsernameForm ou AccountForm.");
-		op = sc.next();
+		System.out.println("1-UsernameForm 2-AccountForm.");
+		op = sc.nextInt();
 		switch (op) {
-		case "UsernameForm":
-			fillU();
+		case 1:
+			fillUser();
 			break;
-		case "AccountForm":
-			fillA();
+		case 2:
+			fillAcc();
 			break;
+		default:
+			formSelect();
 		}
 	}
 
-	public static void fillU() {
+	public static void fillUser() {
 		System.out.println("Insira um username de até 10 caracteres: ");
 		uform.get("username").setData();
 		System.out.println("Insira um email: ");
@@ -48,7 +46,7 @@ public class Main {
 		System.out.println(uform.json());
 	}
 
-	public static void fillA() {
+	public static void fillAcc() {
 		System.out.println("Insira um username de até 10 caracteres: ");
 		aform.get("username").setData();
 		System.out.println("Insira um email: ");
