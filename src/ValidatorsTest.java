@@ -1,10 +1,14 @@
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertAll;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 public class ValidatorsTest {
@@ -52,6 +56,36 @@ public class ValidatorsTest {
 				"--------", // invalid
 				" ", // empty
 				""); // empty
+	}
+
+	static Stream<String> validEmail() {
+		return Stream.of("username@domain.com", "user.name@domain.com", "user-name@domain.com", "username@domain.co.in",
+				"user_name@domain.com");
+	}
+
+	static Stream<String> invalidEmail() {
+		return Stream.of("username.@domain.com", ".user.name@domain.com", "user-name@domain.com.", "username@.com");
+	}
+
+	@ParameterizedTest(name = "#{index} - Run test with email = {0}")
+	@MethodSource("validEmail")
+	public void testUsingRFC5322Regex(String email) {
+		try {
+			new CheckEmail().isValid(email);
+		} catch (ValidationException ve) {
+			fail(ve.toString());
+		}
+		assertAll(() -> new CheckEmail().isValid(email));
+	}
+
+	@ParameterizedTest(name = "#{index} - Run test with email = {0}")
+	@MethodSource("invalidEmail")
+	public void testInvalidEmail(String email) {
+		try {
+			new CheckEmail().isValid(email);
+		} catch (ValidationException ve) {
+			assertNotNull(ve);
+		}
 	}
 
 }

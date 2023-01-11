@@ -1,7 +1,12 @@
+import static org.junit.Assert.assertTrue;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.junit.jupiter.api.Test;
+
 public class CheckEmail extends Validator<String> {
+
 
 	@Override
 	public void isValid(String str) throws ValidationException {
@@ -12,4 +17,6 @@ public class CheckEmail extends Validator<String> {
 			throw new ValidationException("Error: Email is not valid");
 		}
 	}
+
+	
 }
