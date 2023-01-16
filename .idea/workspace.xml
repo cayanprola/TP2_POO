@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e15c2e7-7150-4bc6-ab19-d4c88db12909" name="Changes" comment="Better test view">
+    <list default="true" id="5e15c2e7-7150-4bc6-ab19-d4c88db12909" name="Changes" comment="UsernameFormTest done">
+      <change afterPath="$PROJECT_DIR$/src/AccountFormTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/FormTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/UsernameFormTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/UsernameFormTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FormTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UsernameFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsernameFormTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +77,7 @@
       <workItem from="1672793659738" duration="756000" />
       <workItem from="1673371358730" duration="371000" />
       <workItem from="1673371758834" duration="3632000" />
-      <workItem from="1673824386108" duration="9271000" />
+      <workItem from="1673824386108" duration="9857000" />
     </task>
     <task id="LOCAL-00001" summary="Multiple validators">
       <created>1672780077151</created>
@@ -116,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673829652542</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="UsernameFormTest done">
+      <created>1673835227884</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673835227884</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +144,7 @@
     <MESSAGE value="Added errors message and field name" />
     <MESSAGE value="Improvements and ValidatorsTest done" />
     <MESSAGE value="Better test view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better test view" />
+    <MESSAGE value="UsernameFormTest done" />
+    <option name="LAST_COMMIT_MESSAGE" value="UsernameFormTest done" />
   </component>
 </project>
