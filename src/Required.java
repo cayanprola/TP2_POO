@@ -12,7 +12,7 @@ public class Required extends Validator<String> {
 
 	@Override
 	public void isValid(String str) throws ValidationException {
-		if (str.length() <= 0) {
+		if (str.length() == 0) {
 			throw new ValidationException("Error: Value is required");
 		}
 	}

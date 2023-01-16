@@ -62,7 +62,6 @@ public class Form<T, E> extends HashMap {
 
 	@SuppressWarnings("unchecked")
 	public <T> Field<T> get(String key) {
-		// TODO: Add exception if not on keys?
 		return (Field<T>) this.map.get(key);
 	}
 
@@ -74,12 +73,4 @@ public class Form<T, E> extends HashMap {
 			}
 		}
 	}
-
-	public void addErrors(String str) {
-		errors.add(str);
-	}
-	// Getters
-
-	// Methods
-
 }

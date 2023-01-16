@@ -38,6 +38,7 @@ public class NumberField extends Field<Number> {
 	@Override
 	void setData() {
 		int num = sc.nextInt();
+
 		this.nf.add(num);
 	}
 }

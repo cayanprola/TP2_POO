@@ -15,5 +15,4 @@ abstract class Field<T> {
 	abstract ArrayList<String> validateField();
 
 	abstract void setData();
-
 }

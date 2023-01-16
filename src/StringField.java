@@ -44,6 +44,5 @@ public class StringField extends Field<String> {
 		String str = sc.next();
 
 		this.sf.add(str);
-
 	}
 }
