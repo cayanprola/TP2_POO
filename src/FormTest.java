@@ -6,14 +6,6 @@ import org.junit.jupiter.api.Test;
 
 class FormTest {
 
-	@BeforeEach
-	void setUp() throws Exception {
-	}
-
-	@AfterEach
-	void tearDown() throws Exception {
-	}
-
 	@Test
 	void test() {
 		fail("Not yet implemented"); // TODO

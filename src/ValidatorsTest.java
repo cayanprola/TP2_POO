@@ -1,6 +1,6 @@
-import org.junit.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -152,7 +152,7 @@ public class ValidatorsTest {
 
 	/* Testes para Required */
 
-	@org.junit.jupiter.api.Test
+	@Test
 	public void testValidRequired() {
 		try {
 			new Required().isValid("teste");
@@ -162,7 +162,7 @@ public class ValidatorsTest {
 		assertAll(() -> new Required().isValid("teste"));
 	}
 
-	@org.junit.jupiter.api.Test
+	@Test
 	public void testInvalidRequired() {
 		try {
 			new Required().isValid("");
@@ -215,7 +215,7 @@ public class ValidatorsTest {
 
 	/* Testes para EqualsVal */
 
-	@org.junit.jupiter.api.Test
+	@Test
 	public void testValidEqualsVal() {
 		HashMap<String, Field<String>> map = new HashMap<String, Field<String>>();
 		map.put("email", new StringField("Email", new Validator[] {}));
@@ -229,7 +229,7 @@ public class ValidatorsTest {
 		assertAll(() -> new EqualsVal(map.get("email")).isValid("teste@gmail.com"));
 	}
 
-	@org.junit.jupiter.api.Test
+	@Test
 	public void testInvalidEqualsVal() {
 		HashMap<String, Field<String>> map = new HashMap<String, Field<String>>();
 		map.put("email", new StringField("Email", new Validator[] {}));
